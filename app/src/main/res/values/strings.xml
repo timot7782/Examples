@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ParkTap</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- THESE ARE FOR THE INITIAL ONBOARDING ONLY! -->
+    <string name="initial_onboarding_page_1_phrase">Never forget your parking location again</string>
+    <string name="initial_onboarding_page_1_already_a_member">Already a member?</string>
+    <string name="initial_onboarding_page_2_phrase">Record time when you\'ve arrived &amp; estimate fee parking</string>
+    <string name="initial_onboarding_page_3_phrase">Easily save and get direction to your parking location</string>
+    <string name="initial_onboarding_page_4_phrase">Get deals &amp; vouchers from your nearby area and redeem it</string>
+    <string name="initial_onboarding_page_5_phrase">Chat with your nearby friends for reunion or just catch up</string>
+
+    <string name="skip">Skip</string>
+    <string name="sign_up">SIGN-UP</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+</resources>
