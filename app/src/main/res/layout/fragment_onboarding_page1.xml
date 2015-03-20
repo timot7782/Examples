@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pt="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/onboard_container"
+    >
+
+    <com.indovation.parktap.util.PTTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_skip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <com.indovation.parktap.util.PTTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        pt:typeface="opensans_light"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_initial_onboarding_phrase1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp" />
+
+    <com.indovation.parktap.util.PTTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        pt:typeface="opensans_light"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_initial_onboarding_phrase2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:layout_alignBottom="@id/tv_initial_onboarding_phrase1" />
+
+</RelativeLayout>

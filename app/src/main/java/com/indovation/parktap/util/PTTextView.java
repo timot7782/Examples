@@ -19,12 +19,16 @@ public class PTTextView extends TextView {
 
     public PTTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        parseAttributes(context,attrs);
+        if (!isInEditMode()) {
+            parseAttributes(context, attrs);
+        }
     }
 
     public PTTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        parseAttributes(context,attrs);
+        if (!isInEditMode()) {
+            parseAttributes(context, attrs);
+        }
     }
 
     private void parseAttributes(Context context, AttributeSet attrs) {

@@ -1,5 +1,6 @@
 package com.indovation.parktap.adapter;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -11,9 +12,13 @@ import com.indovation.parktap.fragment.OnboardingFragment;
  */
 public class OnboardingFragmentAdapter extends FragmentStatePagerAdapter {
 
+    private Context context;
+
     public OnboardingFragmentAdapter(FragmentManager fm) {
         super(fm);
     }
+
+
 
     @Override
     public Fragment getItem(int page) {
