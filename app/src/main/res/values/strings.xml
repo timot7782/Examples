@@ -13,6 +13,6 @@
     <string name="initial_onboarding_page_5_phrase">Chat with your nearby friends for reunion or just catch up</string>
 
     <string name="skip">Skip</string>
-    <string name="sign_up">SIGN-UP</string>
+    <string name="sign_in">SIGN-IN</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
 </resources>

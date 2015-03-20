@@ -54,19 +54,25 @@ public class OnboardingFragment extends Fragment {
                 ImageView ivParkTapLogo = new ImageView(getActivity());
                 PTTextView tvPhrase1 = new PTTextView(getActivity());
                 PTTextView tvPhrase2 = new PTTextView(getActivity());
+                PTTextView tvPhrase3 = new PTTextView(getActivity());
 
                 ivParkTapLogo.setImageResource(R.drawable.parktap_logo);
                 tvPhrase1.setText(R.string.initial_onboarding_page_1_phrase);
+                tvPhrase1.setGravity(Gravity.CENTER);
                 tvPhrase2.setText(R.string.initial_onboarding_page_1_already_a_member);
-                tvPhrase2.setOnClickListener(new View.OnClickListener() {
+                tvPhrase2.setGravity(Gravity.CENTER);
+                tvPhrase3.setText(R.string.sign_in);
+                tvPhrase3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(getActivity(),null));
                     }
                 });
+                tvPhrase3.setGravity(Gravity.CENTER);
                 layout.addView(ivParkTapLogo);
                 layout.addView(tvPhrase1);
                 layout.addView(tvPhrase2);
+                layout.addView(tvPhrase3);
                 break;
 
             case 1:
