@@ -5,7 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.indovation.parktap.fragment.OnboardingFragment;
+import com.indovation.parktap.fragment.onboarding.OnboardingFragment;
+
 
 /**
  * Created by Timothy on 3/20/2015.

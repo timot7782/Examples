@@ -7,12 +7,16 @@
     <!-- THESE ARE FOR THE INITIAL ONBOARDING ONLY! -->
     <string name="initial_onboarding_page_1_phrase">Never forget your parking location again</string>
     <string name="initial_onboarding_page_1_already_a_member">Already a member?</string>
-    <string name="initial_onboarding_page_2_phrase">Record time when you\'ve arrived &amp; estimate fee parking</string>
-    <string name="initial_onboarding_page_3_phrase">Easily save and get direction to your parking location</string>
-    <string name="initial_onboarding_page_4_phrase">Get deals &amp; vouchers from your nearby area and redeem it</string>
-    <string name="initial_onboarding_page_5_phrase">Chat with your nearby friends for reunion or just catch up</string>
+    <string name="initial_onboarding_page_2_phrase1">Record time when you\'ve arrived &amp;</string>
+    <string name="initial_onboarding_page_2_phrase2">estimate fee parking</string>
+    <string name="initial_onboarding_page_3_phrase1">Easily save and get direction to your</string>
+    <string name="initial_onboarding_page_3_phrase2">parking location</string>
+    <string name="initial_onboarding_page_4_phrase1">Get deals &amp; vouchers from your nearby area</string>
+    <string name="initial_onboarding_page_4_phrase2">and redeem it</string>
+    <string name="initial_onboarding_page_5_phrase1">Chat with your nearby friends for reunion</string>
+    <string name="initial_onboarding_page_5_phrase2">or just catch up</string>
 
-    <string name="skip">Skip</string>
-    <string name="sign_in">SIGN-IN</string>
+    <string name="skip">SKIP</string>
+    <string name="sign_in"><u>SIGN-IN</u></string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
 </resources>

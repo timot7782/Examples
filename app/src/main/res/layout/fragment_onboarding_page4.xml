@@ -15,6 +15,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        pt:typeface="opensans_light"
+        android:textColor="@android:color/white"
+        android:text="@string/skip"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"/>
 
@@ -25,20 +28,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_skip"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="107dp">
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="70dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/parktap_logo"/>
-
-        <com.indovation.parktap.util.PTTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/initial_onboarding_page_1_phrase"
-            pt:typeface="opensans_light"
-            android:layout_gravity="center"
-            android:textColor="@android:color/white"/>
+            android:src="@drawable/onboarding_deals" />
     </LinearLayout>
 
     <com.indovation.parktap.util.PTTextView
@@ -46,7 +43,7 @@
         android:layout_height="wrap_content"
         pt:typeface="opensans_light"
         android:textColor="@android:color/white"
-        android:text="@string/initial_onboarding_page_1_already_a_member"
+        android:text="@string/initial_onboarding_page_4_phrase1"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
@@ -56,9 +53,9 @@
     <com.indovation.parktap.util.PTTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        pt:typeface="opensans_semi_bold"
+        pt:typeface="opensans_light"
         android:textColor="@android:color/white"
-        android:text="@string/sign_in"
+        android:text="@string/initial_onboarding_page_4_phrase2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
