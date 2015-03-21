@@ -1,16 +1,16 @@
 package com.indovation.parktap.fragment.onboarding;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.indovation.parktap.R;
+import com.indovation.parktap.util.PTTextView;
 
 /**
  * Created by Timothy on 3/20/2015.
@@ -19,6 +19,7 @@ public class OnboardingFragment extends Fragment {
 
     private static final String ONBOARDING_PAGE = "onboarding:page";
     int arbID = 1;
+
     public OnboardingFragment() {
     }
 
@@ -47,37 +48,65 @@ public class OnboardingFragment extends Fragment {
         switch (page) {
             case 0:
                 view = inflater.inflate(R.layout.fragment_onboarding_page1,null);
-                TextView tvSignIn = (TextView)view.findViewById(R.id.tv_sign_in);
-                tvSignIn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        startActivity(new Intent(getActivity(), null));
-                    }
-                });
+
+                PTTextView tvSignIn = (PTTextView)view.findViewById(R.id.tv_sign_in);
+//                tvSignIn.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+////                        Toast.makeText(getActivity(), "You will be redirected to sign in page", Toast.LENGTH_SHORT).show();
+//                        ViewPager vp = (ViewPager)getActivity().findViewById(R.id.vp_initial_onboarding_pager);
+//                        vp.setCurrentItem(6,true);
+//                    }
+//                });
+                setSkipButtonListener(tvSignIn);
                 break;
 
             case 1:
                 view = inflater.inflate(R.layout.fragment_onboarding_page2,null);
+
+                PTTextView tvSkip1 = (PTTextView)view.findViewById(R.id.tv_skip);
+                setSkipButtonListener(tvSkip1);
                 break;
 
             case 2:
                 view = inflater.inflate(R.layout.fragment_onboarding_page3,null);
-                break;
+                PTTextView tvSkip2 = (PTTextView)view.findViewById(R.id.tv_skip);
+                setSkipButtonListener(tvSkip2);
 
             case 3:
                 view = inflater.inflate(R.layout.fragment_onboarding_page4,null);
+                PTTextView tvSkip3 = (PTTextView)view.findViewById(R.id.tv_skip);
+                setSkipButtonListener(tvSkip3);
                 break;
 
             case 4:
                 view = inflater.inflate(R.layout.fragment_onboarding_page5,null);
+                PTTextView tvSkip4 = (PTTextView)view.findViewById(R.id.tv_skip);
+                setSkipButtonListener(tvSkip4);
                 break;
 
             case 5:
-                view = inflater.inflate(R.layout.fragment_onboarding_page5,null);
+//                FragmentTransaction fragmentTransaction = getFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.rl_initial_onboarding_container,new LoginFragment());
+//                fragmentTransaction.commit();
+                view = inflater.inflate(R.layout.fragment_login,null);
                 break;
         }
 //TODO: remember to layout.addView();
         return view;
+    }
+
+    private void setSkipButtonListener(PTTextView theTV) {
+        theTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                        Toast.makeText(getActivity(), "You will be redirected to sign in page", Toast.LENGTH_SHORT).show();
+                //Log.i(OnboardingFragment.class.getSimpleName(),"SKIP BUTTON CLICKED");
+                ViewPager vp = (ViewPager) getActivity().findViewById(R.id.vp_initial_onboarding_pager);
+                vp.setCurrentItem(6, true);
+            }
+        });
     }
 
     @Override
@@ -85,4 +114,5 @@ public class OnboardingFragment extends Fragment {
         super.onSaveInstanceState(outState);
 //        outState.putString(KEY_CONTENT, mContent);
     }
+
 }

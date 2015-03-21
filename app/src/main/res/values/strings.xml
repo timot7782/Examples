@@ -18,5 +18,8 @@
 
     <string name="skip">SKIP</string>
     <string name="sign_in"><u>SIGN-IN</u></string>
-    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password"><u>FORGOT PASSWORD?</u></string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_up"><u>SIGN-UP</u></string>
 </resources>

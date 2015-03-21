@@ -31,4 +31,8 @@
     <declare-styleable name="PTTextView">
         <attr name="typeface"/>
     </declare-styleable>
+
+    <declare-styleable name="PTEditText">
+        <attr name="typeface"/>
+    </declare-styleable>
 </resources>

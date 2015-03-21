@@ -1,14 +1,10 @@
-package com.indovation.parktap;
+package com.indovation.parktap.activity;
 
-import android.annotation.TargetApi;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.view.MotionEvent;
-import android.view.View;
 
+import com.indovation.parktap.R;
 import com.indovation.parktap.adapter.OnboardingFragmentAdapter;
 import com.indovation.parktap.util.SystemUiHider;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -128,6 +124,10 @@ public class OnboardingActivity extends FragmentActivity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
 //        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+    }
+
+    public final ViewPager getViewPager() {
+        return vpPager;
     }
 
     @Override
