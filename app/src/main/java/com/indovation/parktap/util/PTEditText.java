@@ -3,7 +3,7 @@ package com.indovation.parktap.util;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import com.indovation.parktap.R;
 
@@ -11,7 +11,7 @@ import com.indovation.parktap.R;
 /**
  * Created by Timothy on 3/19/2015.
  */
-public class PTEditText extends TextView {
+public class PTEditText extends EditText {
 
     public PTEditText(Context context) {
         super(context);

@@ -1,15 +1,21 @@
 package com.indovation.parktap.fragment.onboarding;
 
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.indovation.parktap.R;
+import com.indovation.parktap.activity.MainActivity;
+import com.indovation.parktap.util.PTEditText;
 import com.indovation.parktap.util.PTTextView;
 
 /**
@@ -91,6 +97,46 @@ public class OnboardingFragment extends Fragment {
 //                        .replace(R.id.rl_initial_onboarding_container,new LoginFragment());
 //                fragmentTransaction.commit();
                 view = inflater.inflate(R.layout.fragment_login,null);
+
+                PTEditText etUserName = (PTEditText) view.findViewById(R.id.et_username);
+                PTEditText etPassword = (PTEditText) view.findViewById(R.id.et_password);
+                PTTextView tvSignUp = (PTTextView) view.findViewById(R.id.tv_sign_up_click);
+                PTTextView tvForgotPassword = (PTTextView) view.findViewById(R.id.tv_forgot_password_click);
+                ImageView ivLoginBtn = (ImageView) view.findViewById(R.id.iv_login_btn);
+
+
+                String userNameEmailAddr = etUserName.getText().toString();
+                String password = etPassword.getText().toString();
+
+                tvSignUp.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO: go to sign up fragment
+                    }
+                });
+
+                tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO: go to forgot password fragment
+                    }
+                });
+
+                ivLoginBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO: start a new activity and go to login fragment
+                        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity().getBaseContext());
+                        SharedPreferences.Editor edit = prefs.edit();
+                        edit.putBoolean(getString(R.string.pref_previously_started), Boolean.TRUE);
+                        edit.commit();
+                        getActivity().finish();
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                    }
+                });
+
+
+
                 break;
         }
 //TODO: remember to layout.addView();

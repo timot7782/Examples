@@ -24,6 +24,7 @@
         android:layout_below="@+id/imageView"
         android:hint="@string/username_hint"
         android:background="@android:color/white"
+        android:inputType="textEmailAddress"
         android:layout_marginTop="20dp"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
@@ -31,7 +32,7 @@
         android:layout_alignStart="@+id/imageView"
         android:padding="10dp"
         pt:typeface="opensans_light"
-        android:textColor="@android:color/white"/>
+        android:nextFocusForward="@+id/et_password"/>
 
     <com.indovation.parktap.util.PTEditText
         android:layout_width="wrap_content"
@@ -48,8 +49,7 @@
         android:layout_alignStart="@+id/et_username"
         android:padding="10dp"
         android:layout_marginTop="1dp"
-        pt:typeface="opensans_light"
-        android:textColor="@android:color/white"/>
+        pt:typeface="opensans_light"/>
 
     <ImageView
         android:layout_width="wrap_content"
